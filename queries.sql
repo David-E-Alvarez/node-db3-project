@@ -17,4 +17,8 @@
         --     where order_id = '10251'
         --     order by product_name;
 
---[ ] Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
+--[x] Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
+
+        -- select order_id, company_name, last_name from orders
+        --     join customers on orders.customer_id = customers.customer_id
+        --     join employees on orders.employee_id = employees.employee_id;
