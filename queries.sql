@@ -1,15 +1,14 @@
 -- Multi-Table Query Practice
 
 -- [x] Display the ProductName and CategoryName for all products in the database. Shows 77 records.
-        select product_name, category_name, description from products
-            join categories on products.category_id = categories.category_id;
+        -- select product_name, category_name, description from products
+        --     join categories on products.category_id = categories.category_id;
 
--- [ ] Display the order Id and shipper CompanyName for all orders placed before August 9 2012. Shows 429 records.
+-- [x] Display the order Id and shipper CompanyName for all orders placed before August 9 2012. Shows 429 records.
 
-        -- not correct
-        -- select order_date, ship_name from order_details
-        --     join orders on order_details.order_id = orders.order_id
-        --     where order_date < '2012-08-09';
+--      select [Order].Id, OrderDate,CompanyName from [Order]
+--         join Shipper on [Order].ShipVia = Shipper.Id
+--         where OrderDate < '2012-08-09';
 
 -- [x] Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
         -- select order_id,product_name, quantity from products
